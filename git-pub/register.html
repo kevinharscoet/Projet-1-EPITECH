@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connexion</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="bodyRegister">
+    <a href="main.html">home</a>
+    <h1 id="rh1">merci de créer un compte</h1>
+
+    <div>
+        <form id="formRegister">
+            <input type="text" id="rNom" name="nom" placeholder="nom..." required>
+            <input type="text" id="rPrenom" name="prenom" placeholder="prenom..." required>
+            <input type="text" id="rNomEntreprise" name="nomEntreprise" placeholder="Nom entreprise si vous etes recruteur...">
+            <input type="email" id="rEmail" name="email" placeholder="email..." required>
+            <input type="password" id="rMDP" placeholder="Mot de passe..." required>
+            <input type="password" id="rConfirmeMDP" name="confirmeMDP" placeholder="Confirmation mot de passe..." required>
+            <button id="seRegister">s'enregistrer</button>
+        </form>
+    </div>
+    <a href="connexion.html">Vous avez déjà un compte?</a>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>recruteur</title>
+        <link rel="stylesheet" href="recruteur.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body  class="body" id="bodyRecruteur">
+        <div>
+            <a href="main.html">
+            <img src="logo.png" alt="retour" id="logo">
+            </a>
+            <a href="main.html" class="connexion" id="decon">Déconnexion</a>
+        </div>
+        <h1 class="Titre">Recruteur</h1>
+        <h2 class="Titre">Poster une nouvelle annonce: </h2>
+        
+        <container id="rContainerForm">
+            <form  method="POST" id="recruteurForm" class="rForm">
+                <container class="form1">
+                    <div>
+                        <label for="rTitre">Titre: </label>
+                        <input type="text" name="rTitre" id="rTitre" required>
+                    </div>
+
+                    <label for="rEntreprise">Entreprise: </label>
+                    <input type="text" name="rEntreprise" id="rEntreprise" value="le nom par rapport a la connexion" required>
+
+                    <label for="rPoste">Poste: </label>
+                    <input type="text" id="rPoste" placeholder="Developpeur, Pompier, Cuisinier, ..." required>
+
+                    <label for="rLocalisation">Ville: </label>
+                    <input type="text" id="rLocalisation" placeholder="Montpellier, Paris,..." required>
+
+                    <label for="rTypeContrat">Type de contrat: </label>
+                    <select name="rTypeContrat" id="rTypeContrat">
+                        <option value="CDD" selected>CDD</option>
+                        <option value="CDI">CDI</option>
+                    </select>
+
+                    <label for="rPetiteDescription">Description brève: </label>
+                    <textarea name="rPetiteDescription" id="rPetiteDescription" cols="30" rows="5" maxlength="60" placeholder="60 caratères max" required></textarea>
+                </container>
+                <container class="form2">
+                    <label for="rGrosseDescription">Description détaillée: </label>
+                    <textarea name="rGrosseDescription" id="rGrosseDescription" cols="30" rows="15"></textarea>
+
+                    <input type="submit" value="Poster l'annonce" id="rPoster">
+                </container>
+            </form>
+        </container>
+        <h2 class="Titre">Vos annonces en cours: </h2>
+        <button id="vosAnnonces" style="width: 30%;">Charger vos annonces</button>
+        <container id="rMenuAnnonce">
+            
+            <div class="menuDescription">
+                
+            </div>
+            
+        </container>
+       
+
+    </body>
+    <script src="recruteur.js"></script>
+</html>

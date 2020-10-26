@@ -1,0 +1,72 @@
+#bodyRecruteur
+{
+    display: grid;
+    /* grid-template-rows: 0,1fr 1fr 1fr 4fr 1fr 4fr; */
+    background-color: rgb(172, 171, 171);
+    align-content: center;
+}
+#logo
+{
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+#decon
+{
+    text-decoration: none;
+    color: white; 
+    float: right;
+}
+#decon:hover
+{
+    color : lightskyblue;
+}
+.Titre
+{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#rContainerForm
+{
+    margin: 40px;
+}
+.rForm
+{
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+.form1
+{
+    display: grid;
+}
+.form2
+{
+    display: grid;
+}
+#rMenuAnnonce
+{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.annonce
+{
+    background-color: rgb(109, 248, 218);
+    grid-column: 1 / 2;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.menuDescription
+{
+    grid-column: 2 / 3;
+    padding: 5px;
+    margin: 5px;
+      
+}
+
